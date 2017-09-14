@@ -49,7 +49,7 @@ D'après ce théorème, un système de calcul distribué ne peut garantir à un 
 * base **clé/valeur**
 * base orientée **colonne**
 * base orientée **document**
-* base orientée **graph**
+* base orientée **graphe**
 
 --- 
 
@@ -87,6 +87,8 @@ $ docker pull redis
 $ docker run --name some-redis -d redis
 $ docker exec -it some-redis bash
 root@af8f46c12686:/data# redis-cli
+127.0.0.1:6379> PING
+PONG
 ```
 
 [Redis Tutorial](https://www.tutorialspoint.com/redis/index.htm)
@@ -153,6 +155,47 @@ root@12d5d59f48d0:/# mongo
 ```
 
 [MongoDB Tutorial](https://www.tutorialspoint.com/mongodb/index.htm)
+
+---
+
+# Les différents types *NoSQL*
+
+## Base orientée graphe
+
+Une base de données orientée graphe est **une base de données orientée objet** utilisant la **théorie des graphes**, donc avec **des nœuds et des arcs**, permettant de **représenter et stocker les données**.
+
+[Wikipedia](https://fr.wikipedia.org/wiki/Base_de_donn%C3%A9es_orient%C3%A9e_graphe)
+
+---
+
+# Les différents types *NoSQL*
+
+## Base orientée graphe
+
+![](images/base-graphe.svg)
+
+---
+
+# Base orientée graphe
+
+## Neo4j
+
+![](images/neo4j_logo-facebook.png)
+
+---
+
+# Base orientée graphe
+
+## Neo4j - tutoriel
+
+```
+$ docker pull neo4j:3.0
+$ docker run -p 7474:7474 --name some-neo4j -d neo4j:3.0
+```
+
+```
+http://$(docker-machine ip default):7474
+```
 
 
 
