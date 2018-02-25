@@ -189,8 +189,8 @@ Une base de données orientée graphe est **une base de données orientée objet
 ## Neo4j - tutoriel
 
 ```
-$ docker pull neo4j:3.0
-$ docker run -p 7474:7474 --name some-neo4j -d neo4j:3.0
+$ docker pull neo4j
+$ docker run -p 7474:7474 --name some-neo4j -d neo4j
 ```
 
 ```
