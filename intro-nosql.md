@@ -190,11 +190,11 @@ Une base de données orientée graphe est **une base de données orientée objet
 
 ```
 $ docker pull neo4j
-$ docker run -p 7474:7474 --name some-neo4j -d neo4j
+$ docker run -p7474:7474 -p7687:7687 --name some-neo4j -e NEO4J_AUTH=neo4j/s3cr3t -d neo4j
 ```
 
 ```
-http://$(docker-machine ip default):7474
+http://localhost:7474
 ```
 
 
